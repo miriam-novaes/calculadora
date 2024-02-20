@@ -15,32 +15,41 @@
 </head>
 
 <body>
-
     <div>
-        <P>12,3500</P>
 
-        <button class="gr">AC</button>
-        <button class="gr">+/-</button>
-        <button class="dif">/</button>
-        <button class="dif">*</button>
-        <button class="nu">7</button>
-        <button class="nu">8</button>
-        <button class="nu">9</button>
-        <button class="dif">-</button>
-        <button class="nu">4</button>
-        <button class="nu">5</button>
-        <button class="nu">6</button>
-        <button class="dif">+</button>
-        <button class="nu">1</button>
-        <button class="nu">2</button>
-        <button class="nu">3</button>
-        <button class="ingual equal">=</button>
-        <button class="nu zero">0</button>
-        <button class="nu">.</button>
+      <input class="display">
+
+        <button class="gr" onclick="funcionalidade('AC')">AC</button>
+        <button class="gr" onclick="funcionalidade('+/-')">+/-</button>
+        <button class="dif" onclick="funcionalidade('/')">/</button>
+        <button class="dif" onclick="funcionalidade('*')">*</button>
+        <button class="nu" onclick="funcionalidade('7')">7</button>
+        <button class="nu" onclick="funcionalidade('8')">8</button>
+        <button class="nu" onclick="funcionalidade('9')">9</button>
+        <button class="dif" onclick="funcionalidade('-')">-</button>
+        <button class="nu" onclick="funcionalidade('4')">4</button>
+        <button class="nu" onclick="funcionalidade('5')">5</button>
+        <button class="nu" onclick="funcionalidade('6')">6</button>
+        <button class="dif" onclick="funcionalidade('+')">+</button>
+        <button class="nu" onclick="funcionalidade('1')">1</button>
+        <button class="nu" onclick="funcionalidade('2')">2</button>
+        <button class="nu" onclick="funcionalidade('3')">3</button>
+        <button class="ingual equal" onclick="funcionalidade('=')">=</button>
+        <button class="nu zero" onclick="funcionalidade('0')">0</button>
+        <button class="nu" onclick="funcionalidade('.')">.</button>
     </div>
 
     <footer></footer>
+
+    <script>
+        function funcionalidade(num) {
+        const display = document.querySelector(".display").value
+        
+        document.querySelector(".display").value = display + num
+
+        }
+    </script>
     
 </body>
-
+   
 </html>
