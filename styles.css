@@ -11,7 +11,7 @@
 }
 
 body{
-   background:#e095c3; 
+   background: linear-gradient(to bottom, #68b1bf, #ffffff); 
    height: 100vh;
    width: 100vw;
    display: grid;
@@ -52,12 +52,12 @@ button:active{
 
 
 .dif{
-  background: rgb(76, 76, 241);
+  background: rgb(131, 178, 184);
 }
 
 
 .ingual{
-  background:#4e9de6 ;
+  background:#6895bf ;
 }
 
 .zero{

@@ -19,8 +19,8 @@
 
       <input class="display">
 
-        <button class="gr" onclick="funcionalidade('AC')">AC</button>
-        <button class="gr" onclick="funcionalidade('+/-')">+/-</button>
+        <button class="gr" onclick="limpa()">AC</button>
+        <button class="gr" onclick="inverso()">+/-</button>
         <button class="dif" onclick="funcionalidade('/')">/</button>
         <button class="dif" onclick="funcionalidade('*')">*</button>
         <button class="nu" onclick="funcionalidade('7')">7</button>
@@ -34,21 +34,14 @@
         <button class="nu" onclick="funcionalidade('1')">1</button>
         <button class="nu" onclick="funcionalidade('2')">2</button>
         <button class="nu" onclick="funcionalidade('3')">3</button>
-        <button class="ingual equal" onclick="funcionalidade('=')">=</button>
+        <button class="ingual equal" onclick="calculos()">=</button>
         <button class="nu zero" onclick="funcionalidade('0')">0</button>
         <button class="nu" onclick="funcionalidade('.')">.</button>
     </div>
 
     <footer></footer>
 
-    <script>
-        function funcionalidade(num) {
-        const display = document.querySelector(".display").value
-        
-        document.querySelector(".display").value = display + num
-
-        }
-    </script>
+    <script src="./index.js"></script>
     
 </body>
    
